@@ -43,6 +43,7 @@ ${RUBY_SCL}-rubygem-rake \
 ${RUBY_SCL}-rubygem-bundler \
 " && \
     yum install -y --setopt=tsflags=nodocs ${INSTALL_PKGS} && \
+    yum install -y openscap && \
     yum clean all -y && \
     rpm -V ${INSTALL_PKGS}
 
